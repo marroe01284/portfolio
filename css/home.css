@@ -42,18 +42,36 @@ p{
     opacity: 1;
     transform: translateY(0);
 }
-.about-me {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.about-container{
+    border-radius: 8px;
     background-color: #f0f0f0; /* Initial background color same as body */
     transition: background-color 3s ease;
+    height: fit-content;
 }
-.about-me.visible {
-    background-color: rgba(100, 100, 253, 1); /* New background color for About Me section */
+.about-container h2{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    color: #f0f0f0;
+}
+.image-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.about-me {
+    display: flex;
+    width: 100%;
+}
+
+.about-container.visible {
+    background-color: #69a6f9; /* New background color for About Me section */
+    width: fit-content;
+}
+.work{
+    padding: 30px;
+    width: 50%;
 }
 .about-me p {
     font-size: 24px;
@@ -76,6 +94,11 @@ p{
         transform: translateY(0);
     }
 }
+.card-title{
+    text-align: center;
+    font-size: 42px;
+    margin-top: 10rem;
+}
 .cards-section {
     background-color: #f0f0f0; /* Same as body background color */
     padding: 50px 20px;
@@ -94,8 +117,14 @@ p{
     margin: 20px;
     opacity: 0;
     transform: translateX(-100px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 2s ease, transform 3s ease;
+    cursor: pointer;
 }
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .card img {
     width: 100%;
     border-top-left-radius: 10px;
@@ -136,10 +165,19 @@ p{
 .language h3 {
     margin: 10px 0 0 0;
 }
+.title-learning{
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
 .contact-section {
-    background-color: #f0f0f0; /* Same as body background color */
+    background-color: #69a6f9; /* Same as body background color */
     padding: 50px 20px;
     text-align: center;
+    border-radius: 8px;
+}
+.contact-section h2{
+    font-size: 42px;
+    color: #f0f0f0;
 }
 .contact-container {
     display: flex;
@@ -156,6 +194,8 @@ p{
 .contact.visible {
     opacity: 1;
     transform: translateY(0);
+    color: #5B5B5B;
+    
 }
 .contact img {
     width: 100px;
