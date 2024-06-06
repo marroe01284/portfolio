@@ -15,7 +15,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 900px;
+    height: 750px;
 }
 .typewriter {
     font-size: 24px;
@@ -60,19 +60,23 @@ p{
     align-items: center;
     margin-bottom: 5rem;
 }
+.image-about img{
+    width: 80%;
+}
 .about-me {
     display: flex;
     width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-container.visible {
     background-color: #69a6f9; /* New background color for About Me section */
     width: fit-content;
 }
-.work{
-    padding: 30px;
-    width: 50%;
-}
+
 .about-me p {
     font-size: 24px;
     opacity: 0;
@@ -200,4 +204,20 @@ p{
 .contact img {
     width: 100px;
     height: 100px;
+}
+@media (min-width: 690px){
+.about-me{
+    flex-direction: row;
+    text-align: start;
+    align-items: normal;
+}
+
+    .work{
+        padding: 30px;
+        width: 50%;
+    }
+    .image-about img{
+        width: fit-content;
+    }
+
 }
