@@ -1,19 +1,40 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <script src="js/home.js" defer></script>
 </head>
+
 <body>
+    <nav>
+        <div class="contact-section" id="contactSection">
+            <div class="contact-container">
+                <div class="contact">
+                    <a href="https://www.linkedin.com/in/marius-rønning-774877131" target="_blank">
+                        <img src="assets/images/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="contact">
+                    <a href="https://github.com/marroe01284" target="_blank">
+                        <img src="assets/images/github.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="typewriter" id="typewriter"></div>
         <div class="slide-in" id="name">Marius Rønning</div>
-        <div class="slide-in" id="lorem">Im a junior developer on a journey to learn and hone my skills until I eventually become a senior developer. </div>
+        <div class="slide-in" id="lorem">Im a junior developer on a journey to learn and hone my skills until I
+            eventually become a senior developer. </div>
     </div>
     <div class="about-container" id="aboutMe">
         <h2>About me</h2>
@@ -23,38 +44,52 @@
         <div class="about-me">
             <div class="work">
                 <h3>Worklife</h3>
-                <p>Currently studying Front End Development with a focus on mastering frameworks like React and Tailwind. I'm passionate about expanding my skill set. In my spare time i'm diving into Salesforce, Python, WordPress, AI, and leadership/Scrum Master practices. With over +5 years of experience as a sales leader, I hold multiple certifications in both basic and advanced leadership.</p>
+                <p>Currently studying Front End Development with a focus on mastering frameworks like React and
+                    Tailwind. I'm passionate about expanding my skill set. In my spare time i'm diving into Salesforce,
+                    Python, WordPress, AI, and leadership/Scrum Master practices. With over +5 years of experience as a
+                    sales leader, I hold multiple certifications in both basic and advanced leadership.</p>
             </div>
             <div class="work">
                 <h3>Personal</h3>
                 <p>
-                    When I'm not working, I love staying active and enjoying the great outdoors. You'll often find me fishing or hunting, always on the lookout for my next adventure. I also love running and hitting the gym to stay fit. I'm a big fan of gaming and I love getting lost in new games. Music is a huge part of my life too – whether I'm working out, relaxing, or just hanging out, there's always a soundtrack playing in the background. These hobbies keep me happy and energized, and they help me stay motivated in everything I do.</p>
-                </div>
+                    When I'm not working, I love staying active and enjoying the great outdoors. You'll often find me
+                    fishing or hunting, always on the lookout for my next adventure. I also love running and hitting the
+                    gym to stay fit. I'm a big fan of gaming and I love getting lost in new games. Music is a huge part
+                    of my life too – whether I'm working out, relaxing, or just hanging out, there's always a soundtrack
+                    playing in the background. These hobbies keep me happy and energized, and they help me stay
+                    motivated in everything I do.</p>
             </div>
         </div>
+    </div>
     <h2 class="card-title">Some of my work</h2>
     <div class="cards-section" id="cardsSection">
         <div class="cards-container">
-            
-            <div class="card">
+            <div class="card" data-url="theblog.html">
                 <img src="assets/images/the-blog.png" alt="Image 1">
                 <div class="card-content">
                     <h3>THE BLOG</h3>
-                    <p>Welcome to The Blog project <br> This project contains the front-end user interface for an existing API blogging application. The application is designed to be responsive and dynamic, allowing users to view blog posts. This project includes admin pages for registering, logging in, and managing blog posts.</p>
+                    <p>Welcome to The Blog project <br> This project contains the front-end user interface for an
+                        existing API blogging application. The application is designed to be responsive and dynamic,
+                        allowing users to view blog posts. This project includes admin pages for registering, logging
+                        in, and managing blog posts.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-url="squareeyes.html">
                 <img src="assets/images/square-eyes.png" alt="Image 2">
                 <div class="card-content">
                     <h3>SQUARE EYES</h3>
-                    <p>SQUARE EYES <br> is a movie streaming platform where users can explore, watch, and review a wide variety of films. This project is a part of a coding curriculum, showcasing various JavaScript tasks and assignments that provide an in-depth learning resource.</p>
+                    <p>SQUARE EYES <br> is a movie streaming platform where users can explore, watch, and review a wide
+                        variety of films. This project is a part of a coding curriculum, showcasing various JavaScript
+                        tasks and assignments that provide an in-depth learning resource.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-url="galaxy.html">
                 <img src="assets/images/galaxy-genius.png" alt="Image 3">
                 <div class="card-content">
                     <h3>GalaxyGenius Museum</h3>
-                    <p>Welcome to the GalaxyGenius Museum Website repository! This project showcases an interactive and educational platform designed for a museum dedicated to all human beeings who wants to explore the wonders of the world.</p>
+                    <p>Welcome to the GalaxyGenius Museum Website repository! This project showcases an interactive and
+                        educational platform designed for a museum dedicated to all human beeings who wants to explore
+                        the wonders of the world.</p>
                 </div>
             </div>
         </div>
@@ -103,25 +138,6 @@
             </div>
         </div>
     </div>
-    <div class="contact-section" id="contactSection">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact">
-                <a href="https://www.linkedin.com" target="_blank">
-                    <img src="assets/images/Vector (10).png" alt="LinkedIn">
-                </a>
-            </div>
-            <div class="contact">
-                <a href="https://www.github.com" target="_blank">
-                    <img src="assets/images/Vector (8).png" alt="GitHub">
-                </a>
-            </div>
-            <div class="contact">
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="assets/images/Vector (9).png" alt="Instagram">
-                </a>
-            </div>
-        </div>
-    </div>
 </body>
+
 </html>

@@ -115,7 +115,7 @@ p{
 }
 .card {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
     margin: 20px;
@@ -131,8 +131,9 @@ p{
 
 .card img {
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
 }
 .card-content {
     padding: 20px;
@@ -174,22 +175,17 @@ p{
     margin-bottom: 4rem;
 }
 .contact-section {
-    background-color: #69a6f9; /* Same as body background color */
-    padding: 50px 20px;
     text-align: center;
     border-radius: 8px;
 }
-.contact-section h2{
-    font-size: 42px;
-    color: #f0f0f0;
-}
+
 .contact-container {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 .contact {
-    margin: 20px;
+    margin: 10px;
     text-align: center;
     opacity: 0;
     transform: translateY(20px);
@@ -202,8 +198,8 @@ p{
     
 }
 .contact img {
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
 }
 @media (min-width: 690px){
 .about-me{
