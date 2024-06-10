@@ -5,43 +5,111 @@ body {
     background-color: #f0f0f0;
     color: #333;
 }
+
 .container {
     padding: 50px 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
+
 }
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+
+h1,
+h2,
+h3 {
+    font-family: 'Lato', sans-serif;
 }
+
 .images {
     display: flex;
     gap: 20px;
     justify-content: space-around;
     margin: 20px 0;
+    margin-bottom: 10rem;
 }
+
 .images img {
     width: 48%;
     border-radius: 8px;
 }
+
+.technologies {
+    text-align: center;
+    margin-top: 10rem;
+}
+
 .graph {
     margin: 40px 0;
     height: 300px;
     position: relative;
 }
-.bar {
-    width: 0;
-    height: 30px;
-    background-color: #4CAF50;
-    margin: 10px 0;
-    border-radius: 5px;
-    transition: width 2s;
+
+.graph h2 {
+    text-align: center;
+    color: #333;
+    font-weight: 300;
+    font-size: 20px;
 }
+
+.bar {
+    height: 35px;
+    max-width: 800px;
+    margin: 0 auto 10px auto;
+    line-height: 35px;
+    font-size: 15px;
+    color: white;
+    padding: 0 0 0 10px;
+    position: relative;
+    border-radius: 50px;
+    z-index: -2;
+    font-weight: 900;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.bar::after {
+    content: '';
+    background: linear-gradient(45deg, #ee0979, #ff6a00);
+    height: 35px;
+    transition: .7s;
+    display: block;
+    width: 100%;
+    animation: animate 1 4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50px;
+
+}
+
+.bar1::after {
+    max-width: 30.6%;
+}
+
+.bar2::after {
+    max-width: 41.1%;
+}
+
+.bar3::after {
+    max-width: 28.3%;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
 .text-boxes {
     display: flex;
     gap: 20px;
     justify-content: space-around;
     margin: 20px 0;
 }
+
 .text-box {
     background-color: #fff;
     padding: 20px;
@@ -49,14 +117,17 @@ h1, h2, h3 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 45%;
 }
+
 .summary {
     margin-top: 40px;
 }
+
 .links a {
-    color: #4CAF50;
+    color: #69a6f9;
     text-decoration: none;
     margin-right: 20px;
 }
+
 .links a:hover {
     text-decoration: underline;
 }

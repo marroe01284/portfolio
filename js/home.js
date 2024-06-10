@@ -1,7 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const typewriter = document.getElementById('typewriter');
     const text = "Hello my name is";
     let index = 0;
+   
 
     function type() {
         if (index < text.length) {
@@ -65,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Check visibility on initial load
     checkVisibility();
-    
+
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
         card.addEventListener('click', () => {
